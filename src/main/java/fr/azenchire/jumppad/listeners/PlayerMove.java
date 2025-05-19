@@ -1,6 +1,7 @@
 package fr.azenchire.jumppad.listeners;
 
 import fr.azenchire.jumppad.Main;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -23,6 +24,9 @@ public class PlayerMove implements Listener {
                     Vector launch = (new Vector(direction.getX(), Main.getInstance().getConfig().getDouble("launch-vertical"), direction.getZ())).normalize().multiply(Main.getInstance().getConfig().getDouble("launch-multiplier"));
                     if (Main.getInstance().getConfig().getBoolean("enable-sound", true)) {
                         player.playSound(player.getLocation(), "entity.firework_rocket.launch", 1.0f, 1.0f);
+                    }
+                    if (Main.getInstance().getConfig().getBoolean("enable-message", true)) {
+                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("message")));
                     }
                     player.setVelocity(launch);
                 }

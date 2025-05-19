@@ -1,4 +1,21 @@
+##############################################################
+#                                                            #
+#  Welcome to JumpPad configuration file!                    #
+#                                                            #
+#  You can customize your settings below.                    #
+#                                                            #
+#  Need Minecraft color codes?                               #
+#  Check them out here:                                      #
+#  https://minecraft.fandom.com/wiki/Formatting_codes       #
+#                                                            #
+#  Use '&' followed by the code (e.g., &a for green)         #
+#  to add colors to messages in this config.                 #
+#                                                            #
+##############################################################
+
+jump-block: LIGHT_WEIGHTED_PRESSURE_PLATE
 enable-sound: true
+enable-message: true
+message: "&aWhoosh! &eYou’ve been launched!"
 launch-vertical: 0.3
 launch-multiplier: 3
-jump-block: LIGHT_WEIGHTED_PRESSURE_PLATE
