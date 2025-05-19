@@ -1,1 +1,4 @@
-sound-enabled: true
+enable-sound: true
+launch-vertical: 0.3
+launch-multiplier: 3
+jump-block: LIGHT_WEIGHTED_PRESSURE_PLATE

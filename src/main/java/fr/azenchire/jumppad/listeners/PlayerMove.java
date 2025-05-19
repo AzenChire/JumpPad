@@ -18,10 +18,10 @@ public class PlayerMove implements Listener {
         Block block = event.getClickedBlock();
         if (event.getAction() != Action.RIGHT_CLICK_BLOCK && event.getAction() != Action.LEFT_CLICK_BLOCK) {
             if (block != null) {
-                if (block.getType() == Material.LIGHT_WEIGHTED_PRESSURE_PLATE) {
+                if (block.getType() == Material.valueOf(Main.getInstance().getConfig().getString("jump-block"))) {
                     Vector direction = player.getLocation().getDirection();
-                    Vector launch = (new Vector(direction.getX(), (double)0.3F, direction.getZ())).normalize().multiply(3);
-                    if (Main.getInstance().getConfig().getBoolean("sound-enabled", true)) {
+                    Vector launch = (new Vector(direction.getX(), Main.getInstance().getConfig().getDouble("launch-vertical"), direction.getZ())).normalize().multiply(Main.getInstance().getConfig().getDouble("launch-multiplier"));
+                    if (Main.getInstance().getConfig().getBoolean("enable-sound", true)) {
                         player.playSound(player.getLocation(), "entity.firework_rocket.launch", 1.0f, 1.0f);
                     }
                     player.setVelocity(launch);
