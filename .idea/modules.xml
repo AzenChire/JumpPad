@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JumpPad.iml" filepath="$PROJECT_DIR$/JumpPad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JumpPad.iml" filepath="$PROJECT_DIR$/.idea/JumpPad.iml" />
     </modules>
   </component>
 </project>

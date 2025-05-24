@@ -14,9 +14,19 @@
 # See: https://minecraft.fandom.com/wiki/Formatting_codes
 ###########################################################
 
-jump-block: LIGHT_WEIGHTED_PRESSURE_PLATE
 enable-sound: true
+sound-name: ENTITY_FIREWORK_ROCKET_LAUNCH
+
 enable-message: true
-message: "&aWhoosh! &eYou’ve been launched!"
+launch-message: "&eWhoosh!"
+
 launch-vertical: 0.3
-launch-multiplier: 3
+launch-multiplier: 3.0
+
+prevent-sneak: true
+sneak-message: "&cYou can't get launched while you are sneaking!"
+
+enable-particles: true
+particle-type: FIREWORKS_SPARK
+
+launch-block: LIGHT_WEIGHTED_PRESSURE_PLATE
