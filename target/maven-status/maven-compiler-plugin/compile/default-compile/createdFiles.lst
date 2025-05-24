@@ -1,0 +1,4 @@
+fr/azenchire/jumppad/listeners/PlayerMove.class
+fr/azenchire/jumppad/Main.class
+fr/azenchire/jumppad/commands/JumpPadReload.class
+fr/azenchire/jumppad/commands/JumpPadTabCompleter.class

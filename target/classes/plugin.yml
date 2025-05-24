@@ -1,0 +1,12 @@
+name: JumpPad
+version: '1.0.3'
+main: fr.azenchire.jumppad.Main
+api-version: '1.13'
+authors: [ AzenChire ]
+description: Launch players into the air when they step on special blocks like pressure plates!
+website: https://discord.gg/4nzzkS8beg
+commands:
+  jumppad:
+    description: JumpPad command
+    usage: /jumppad reload
+    permission: jumppad.reload

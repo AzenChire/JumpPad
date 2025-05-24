@@ -1,0 +1,32 @@
+###########################################################
+# Welcome to the JumpPad configuration file!
+#
+# To customize the jump pad block, set the "block-type" option below.
+# Use any valid Minecraft block material name, for example:
+# GOLD_PRESSURE_PLATE, IRON_PRESSURE_PLATE, STONE_PRESSURE_PLATE, HEAVY_WEIGHTED_PRESSURE_PLATE, etc.
+#
+# You can find a full list of valid block material names here:
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+#
+# Remember, material names are case-sensitive and must be exact!
+#
+# For color codes in messages, use '&' followed by the code (e.g. &a for green).
+# See: https://minecraft.fandom.com/wiki/Formatting_codes
+###########################################################
+
+enable-sound: true
+sound-name: ENTITY_FIREWORK_ROCKET_LAUNCH
+
+enable-message: true
+launch-message: "&eWhoosh!"
+
+launch-vertical: 0.3
+launch-multiplier: 3.0
+
+prevent-sneak: true
+sneak-message: "&cYou can't get launched while you are sneaking!"
+
+enable-particles: true
+particle-type: FIREWORKS_SPARK
+
+launch-block: LIGHT_WEIGHTED_PRESSURE_PLATE
