@@ -1,4 +1,4 @@
-![JumpPad](https://github.com/user-attachments/assets/406cab53-c76c-4631-a45a-8afc15f8765c)
+![JumpPad - Header V2](https://github.com/user-attachments/assets/9c760155-73b6-4744-be6d-870dba38d4fe)
 
 # JumpPad
 
